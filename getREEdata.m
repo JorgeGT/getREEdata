@@ -1,13 +1,29 @@
 function [tsDem,demand,tsPrev,prevision,tsPric,priceGen,priceNoc,priceVhc] = getREEData(day)
-%  Copyright (C) 2015  Jorge Garcia Tiscar
-%
-%  This program is free software: you can redistribute it and/or modify
-%  it under the terms of the GNU General Public License as published by
-%  the Free Software Foundation; either version 3 of the License, or
-%  (at your option) any later version (see LICENSE).
-%
-%  This function returns three timeseries with relevant parameters of
-%  Spain's mainland powergrid: demand, generation structure, and price
+% The MIT License (MIT)
+
+% Copyright (c) 2015 Jorge Garcia
+
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
+
+% - Input day in 'yyyy-mm-dd' format
+% - See each section below for structure field descriptions
+% - All output temporal vectors ts* in standard MATLAB format
 
 %% Generation structure
 %  Fields: https://demanda.ree.es/movil/peninsula/demanda/tablas/2
