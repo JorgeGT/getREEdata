@@ -1,4 +1,4 @@
-# Accediendo a datos de la Red Eléctrica de España con MATLAB
+# Accediendo a datos de la Red Eléctrica de España a través de MATLAB
 
 *La red eléctrica es uno de los más activos más importantes y complejos de cualquier país. En esta entrada se muestra como usar una sencilla función de MATLAB para acceder a datos históricos y en tiempo real de Red Eléctrica de España y algunos ejemplos de sus posibles aplicaciones.*
 
